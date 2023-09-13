@@ -3,13 +3,13 @@
 }
 
 .input {
-    border: 1px solid rgba(255, 238, 170, 0.363);
+    border: 1px solid #fea;
     display: block;
     width: 100%;
     font-size: 1rem;
     padding: 0.8rem;
     border-radius: 0.4rem;
-    background: rgba(255, 238, 170, 0.363);
+    background: #fea;
     transition: 0.2s;
 }
 
