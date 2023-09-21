@@ -7,6 +7,7 @@ import Login from "./Components/Login/Login";
 import { BrowserRouter , Routes, Route } from "react-router-dom";
 import { UserStorage } from "./UserContext";
 import ProtectedRoute from "./Components/Helper/ProtectedRoute";
+import User from "./Components/User/User";
 
 
 function App() {
