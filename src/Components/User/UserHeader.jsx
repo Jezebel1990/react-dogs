@@ -8,7 +8,7 @@ const UserHeader = () => {
 const location = useLocation();
 
 React.useEffect(() => {
-    const {pathname} = location;
+    const { pathname } = location;
     switch(pathname) {
         case '/account/post':
           setTitle('Poste Sua Foto');
@@ -19,14 +19,14 @@ React.useEffect(() => {
         default:
         setTitle('Minha Conta')
     }
-}, [location])
+}, [location]);
 
   return (
     <header className={styles.header}>
         <h1 className="title">{title}</h1>
     <UserHeaderNav />
     </header>
-  )
-}
+  );
+};
 
 export default UserHeader;
