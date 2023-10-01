@@ -1,24 +1,35 @@
 import React from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { UserContext } from '../../UserContext';
 import { ReactComponent as MyPhotos} from '../../Assets/feed.svg';
 import { ReactComponent as Statistics } from '../../Assets/estatisticas.svg';
 import { ReactComponent as AddPhoto } from '../../Assets/adicionar.svg';
 import { ReactComponent as Exit} from '../../Assets/sair.svg';
 import styles from './UserHeaderNav.module.css';
-
+import useMedia from '../../Hooks/useMedia';
 
 const UserHeaderNav = () => {
- const [mobile, setMobile] = React.useState(null);
  const { userLogout} = React.useContext(UserContext);
- const navigate = useNavigate();
+ const mobile = useMedia('(max-width: 40rem)');
+const [mobileMenu, setMobileMenu] = React.useState(false);
 
- function handleLogout() {
-    userLogout();
-    navigate('/login');
- }
+const { pathname } = useLocation();
+React.useEffect(() => {
+    setMobileMenu(false);
+}, {pathname});
 
   return (
+    <>
+    {mobile && (
+    <button 
+        aria-label="Menu" 
+        className={`${styles.mobileButton} ${
+            mobileMenu && styles.mobileButtonActive
+        }`}
+        onClick={() => setMobileMenu(!mobileMenu)}
+    ></button>
+)}
+
    <nav className={styles.nav}>
     <NavLink to="/account">
         <MyPhotos />
@@ -32,12 +43,14 @@ const UserHeaderNav = () => {
         {mobile && 'Adicionar Foto'}
         <AddPhoto />
         </NavLink>
-<button onClick={handleLogout}>
+<button onClick={userLogout}>
     <Exit />
    {mobile && 'Sair'}
     </button>
    </nav>
+   </>
   )
 };
+
 
 export default UserHeaderNav
