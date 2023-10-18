@@ -4,13 +4,16 @@ import { Link } from 'react-router-dom';
 import PhotoComments from './PhotoComments';
 import { UserContext } from '../../UserContext';
 import PhotoDelete from './PhotoDelete';
+import Image from '../Helper/Image';
 
 const PhotoContent = ({ data }) => {
    const user = React.useContext(UserContext);
     const { photo, comments } = data;
   return (
     <div className={styles.photo}>
-      <div className={styles.img}><img src={photo.src} alt={photo.title} /></div>
+      <div className={styles.img}>
+      <Image src={photo.src} alt={photo.title} />
+       </div>
       <div className={styles.details}>
       <div>
         <p className={styles.author}>
