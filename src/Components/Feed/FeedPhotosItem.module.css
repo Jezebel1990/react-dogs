@@ -31,7 +31,7 @@
     justify-items: center;
     grid-area: 1/1;
     display: flex;
-    padding: 90px;
+    padding: 35%;
 }
 
 .preview::before {
