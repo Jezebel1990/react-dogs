@@ -9,6 +9,7 @@ import { UserStorage } from "./UserContext";
 import ProtectedRoute from "./Components/Helper/ProtectedRoute";
 import User from "./Components/User/User";
 import Photo from './Components/Photo/Photo';
+import UserProfile from "./Components/User/UserProfile";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
     } 
     />
     <Route path="photo/:id" element={<Photo />} />
+    <Route path="profile/:user" element={<UserProfile />}/>
   </Routes>
     <Footer />
     </UserStorage>

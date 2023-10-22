@@ -9,7 +9,7 @@ import styles from './UserHeaderNav.module.css';
 import useMedia from '../../Hooks/useMedia';
 
 const UserHeaderNav = () => {
- const { userLogout} = React.useContext(UserContext);
+ const { userLogout } = React.useContext(UserContext);
  const navigate = useNavigate();
  function handleLogout() {
    userLogout();
@@ -22,7 +22,7 @@ const [mobileMenu, setMobileMenu] = React.useState(false);
 const { pathname } = useLocation();
 React.useEffect(() => {
     setMobileMenu(false);
-}, {pathname});
+}, [pathname]);
 
   return (
     <>
