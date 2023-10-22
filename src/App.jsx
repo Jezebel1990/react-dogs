@@ -8,10 +8,9 @@ import { BrowserRouter , Routes, Route } from "react-router-dom";
 import { UserStorage } from "./UserContext";
 import ProtectedRoute from "./Components/Helper/ProtectedRoute";
 import User from "./Components/User/User";
-
+import Photo from './Components/Photo/Photo';
 
 function App() {
-
   return (
   <div>
     <BrowserRouter>
@@ -20,12 +19,14 @@ function App() {
   <Routes>
     <Route path="/" element={<Home />} />
     <Route path="login/*" element={<Login />} />
-    <Route path="account/*" 
-    element={
-    <ProtectedRoute>
-     <User />
+    <Route 
+    path="account/*" element={
+      <ProtectedRoute>
+      <User />
     </ProtectedRoute>
-  } />
+    } 
+    />
+    <Route path="photo/:id" element={<Photo />} />
   </Routes>
     <Footer />
     </UserStorage>
