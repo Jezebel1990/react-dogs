@@ -38,11 +38,16 @@ if (response.ok) navigate('/login');
 }
 
   return (
-    <div>
+    <section className="animeLeft">
       <Head title="Resete a senha" />
       <h1 className="title">Resete a Senha</h1>
       <form onSubmit={handleSubmit}>
-      <Input label="Nova Senha" type="password" name="password" {...password} />
+      <Input 
+        label="Nova Senha" 
+        type="password" 
+        name="password" 
+        {...password} 
+        />
     {loading ? (
        <Button disabled>Resetando...</Button>
        ) : (
@@ -50,7 +55,7 @@ if (response.ok) navigate('/login');
         )}
       </form>
       <Error error={error} />
-    </div>
+    </section>
   )
 }
 
