@@ -22,7 +22,7 @@ Welcome, this project is a responsive social network for dogs.
   ## 📂  Access to the project
 
  **Remote access**
-You can access the demo access [website here](https://react-dogs-delta.vercel.app/login)
+You can access the demo access [website here](https://react-dogs-delta.vercel.app/)
   
  **Local access**
 [Download code](https://github.com/Jezebel1990/react-dogs.git)
