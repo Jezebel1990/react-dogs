@@ -17,7 +17,7 @@ Welcome, this project is a responsive social network for dogs.
 - CSS;
 - Victory React library;
 - API REST WordPress
-- 
+
 
   ## 📂  Access to the project
 
@@ -27,7 +27,7 @@ You can access the demo access [website here](https://react-dogs-delta.vercel.ap
  **Local access**
 [Download code](https://github.com/Jezebel1990/react-dogs.git)
 
-```Enter:
+``` Enter:
 npm install
 # and 
 npm run dev
