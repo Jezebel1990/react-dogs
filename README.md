@@ -1,4 +1,6 @@
-# React + Vite
+# 🐶 React + Vite dogs 🐕
+
+Welcome, this project is a responsive social network for dogs.
 
 ##  👀 Preview
 ![Captura de tela 2023-11-05 235526](https://github.com/Jezebel1990/react-dogs/assets/75287031/f3fd2ad7-a8b1-4e84-a90b-8b372bf4f1b2)
@@ -9,9 +11,30 @@
 ![dog1](https://github.com/Jezebel1990/react-dogs/assets/75287031/4cf59226-0467-4570-911f-011818764e99)
 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ⚙️ Technologies
+- React;
+- JavaScript;
+- CSS;
+- Victory React library;
+- API REST WordPress
+- 
 
-Currently, two official plugins are available:
+  ## 📂  Access to the project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ **Remote access**
+You can access the demo access [website here](https://react-dogs-delta.vercel.app/login)
+  
+ **Local access**
+[Download code](https://github.com/Jezebel1990/react-dogs.git)
+
+```Enter:
+npm install
+# and 
+npm run dev
+```
+
+
+##  📚 License
+This project is under the MIT license. See the LICENSE for more information.
+
+Made with ♥ by [Jezebel Guedes](https://www.linkedin.com/in/jezebel-guedes/) 👋 Get in touch!
